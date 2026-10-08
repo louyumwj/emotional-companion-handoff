@@ -1,0 +1,30 @@
+{
+  "args": {
+    "base": "models/chinese-roberta-wwm-ext",
+    "epochs": 2,
+    "batch_size": 8,
+    "lr": 2e-05,
+    "max_length": 256,
+    "max_steps": 20,
+    "subset": 200,
+    "lambda_profile": 1.0,
+    "out": "models/t2_multitask",
+    "tag": "smoke",
+    "threads": 0
+  },
+  "history": [
+    {
+      "emotion_acc": 0.34,
+      "emotion_macro_f1": 0.06183622828784119,
+      "profile_exact": 0.0,
+      "profile_f1": {
+        "personality_traits": 0.13592233009708737,
+        "interests": 0.0,
+        "style": 0.15859030837004406
+      },
+      "epoch": 1,
+      "step": 20
+    }
+  ],
+  "elapsed_sec": 54.9
+}

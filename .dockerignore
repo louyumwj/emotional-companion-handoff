@@ -1,0 +1,14 @@
+.git
+.gitignore
+__pycache__
+*.pyc
+*.log
+state/
+logs/
+models/
+data/
+notebooks/
+*.md
+!README.md
+docs/
+大赛资料/

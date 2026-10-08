@@ -1,0 +1,13 @@
+# 可选依赖：按私有镜像配额取舍，缺任何一个都不影响服务启动（会自动降级）
+#
+# 推理后端（二选一）
+# lmdeploy>=0.6.0
+# vllm>=0.6.0
+#
+# 长记忆向量检索（不装则退化为字符 n-gram 相似度）
+# sentence-transformers>=3.0
+# faiss-cpu>=1.8
+#
+# 可选：本地文本情感小模型
+# transformers>=4.44
+# onnxruntime>=1.18

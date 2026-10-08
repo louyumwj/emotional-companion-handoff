@@ -1,0 +1,24 @@
+{
+  "split_seed": 42,
+  "calib_n": 1178,
+  "holdout_n": 1176,
+  "selection_reserved": false,
+  "emotion_holdout_acc": 0.7278911564625851,
+  "emotion_holdout_macro_f1": 0.6369147321465711,
+  "emotion_full_acc": 0.7141036533559898,
+  "emotion_full_macro_f1": 0.6220562746498155,
+  "profile_A_exact": 0.06802721088435375,
+  "profile_A_f1": {
+    "personality_traits": 0.23438767234387675,
+    "interests": 0.09445277361319342,
+    "style": 0.27824109173616374
+  },
+  "profile_B_exact": 0.3673469387755102,
+  "profile_B_f1": {
+    "personality_traits": 0.0,
+    "interests": 0.0,
+    "style": 0.0
+  },
+  "empty_profile_exact": 0.3681972789115646,
+  "profile_B_threshold": 0.5
+}

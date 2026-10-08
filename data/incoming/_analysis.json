@@ -1,0 +1,416 @@
+{
+  "train": {
+    "split": "train",
+    "conversations": 8338,
+    "turns_total": 117902,
+    "prediction_points": 18657,
+    "turns_per_conv": {
+      "min": 2,
+      "p25": 8,
+      "median": 12,
+      "p75": 18,
+      "max": 50,
+      "mean": 14.14
+    },
+    "points_per_conv": {
+      "min": 0,
+      "p25": 1,
+      "median": 2,
+      "p75": 3,
+      "max": 8,
+      "mean": 2.24
+    },
+    "user_turn_chars": {
+      "min": 2,
+      "p25": 42,
+      "median": 64,
+      "p75": 90,
+      "max": 568,
+      "mean": 70.87
+    },
+    "assistant_turn_chars": {
+      "min": 2,
+      "p25": 68,
+      "median": 121,
+      "p75": 226,
+      "max": 1818,
+      "mean": 211.24
+    },
+    "target_response_chars": {
+      "min": 2,
+      "p25": 70,
+      "median": 129,
+      "p75": 243,
+      "max": 1809,
+      "mean": 218.47
+    },
+    "emotion_label_dist": {
+      "anxiety": 6340,
+      "relaxed": 2819,
+      "helplessness": 1575,
+      "fear": 1388,
+      "sadness": 1085,
+      "mixed": 945,
+      "loneliness": 876,
+      "anger": 855,
+      "shame": 752,
+      "gratitude": 695,
+      "neutral": 654,
+      "pride": 234,
+      "joy": 171,
+      "disgust": 125,
+      "care": 79,
+      "surprise": 64
+    },
+    "profile_array_sizes": {
+      "traits": {
+        "1": 5392,
+        "2": 2689,
+        "0": 10492,
+        "3": 84
+      },
+      "interests": {
+        "0": 12919,
+        "1": 5313,
+        "2": 409,
+        "3": 16
+      },
+      "style": {
+        "1": 8226,
+        "2": 1664,
+        "0": 8731,
+        "3": 36
+      }
+    },
+    "traits_dist": {
+      "sensitive": 5165,
+      "high_conscientiousness": 2281,
+      "conservative": 1364,
+      "introverted": 717,
+      "assertive": 675,
+      "agreeable": 361,
+      "emotionally_stable": 336,
+      "open": 59,
+      "extroverted": 37,
+      "casual": 27
+    },
+    "interests_dist": {
+      "career_development": 1472,
+      "social": 764,
+      "study_exam": 746,
+      "pets": 744,
+      "games": 704,
+      "sports_fitness": 625,
+      "art_design": 341,
+      "reading_writing": 316,
+      "travel_outdoor": 144,
+      "music": 133,
+      "film_animation": 108,
+      "programming_technology": 82
+    },
+    "style_dist": {
+      "rational": 4418,
+      "direct": 2603,
+      "brief": 1166,
+      "detailed": 1121,
+      "high_emotional_expression": 945,
+      "colloquial": 654,
+      "indirect": 516,
+      "formal": 128,
+      "humorous": 81,
+      "emoji_user": 27,
+      "low_emotional_expression": 3
+    },
+    "memory_refs_per_point": {
+      "0": 437,
+      "1": 4398,
+      "2": 8673,
+      "3": 4141,
+      "4": 839,
+      "5": 136,
+      "6": 22,
+      "7": 8,
+      "8": 1,
+      "9": 2
+    },
+    "distinct_mem_ids": 26883,
+    "mem_id_top": [
+      [
+        "mem_037077",
+        10
+      ],
+      [
+        "mem_037474",
+        10
+      ],
+      [
+        "mem_037532",
+        10
+      ],
+      [
+        "mem_037670",
+        10
+      ],
+      [
+        "mem_037147",
+        8
+      ],
+      [
+        "mem_037511",
+        8
+      ],
+      [
+        "mem_037632",
+        8
+      ],
+      [
+        "mem_037515",
+        8
+      ],
+      [
+        "mem_037518",
+        8
+      ],
+      [
+        "mem_037611",
+        8
+      ]
+    ],
+    "conversations_with_memory": 8221,
+    "resp_turn_gap_dist": {
+      "1": 18653,
+      "-1": 4
+    },
+    "target_text_equals_turn_text": 18657,
+    "target_turn_missing": 0,
+    "not_adjacent": 4,
+    "first_prediction_target_turn_dist": {
+      "1": 589,
+      "3": 2088,
+      "5": 2434,
+      "7": 1142,
+      "9": 763,
+      "11": 406,
+      "13": 209,
+      "15": 277,
+      "17": 143,
+      "19": 115,
+      "21": 43,
+      "23": 42,
+      "25": 24,
+      "27": 20,
+      "29": 11,
+      "31": 6,
+      "33": 6,
+      "35": 4,
+      "37": 8,
+      "39": 1,
+      "47": 1,
+      "49": 1
+    },
+    "roles": {
+      "user": 58951,
+      "assistant": 58951,
+      "bad": 0
+    }
+  },
+  "val": {
+    "split": "val",
+    "conversations": 900,
+    "turns_total": 11732,
+    "prediction_points": 2354,
+    "turns_per_conv": {
+      "min": 4,
+      "p25": 6,
+      "median": 10,
+      "p75": 16,
+      "max": 50,
+      "mean": 13.04
+    },
+    "points_per_conv": {
+      "min": 1,
+      "p25": 2,
+      "median": 3,
+      "p75": 3,
+      "max": 9,
+      "mean": 2.62
+    },
+    "user_turn_chars": {
+      "min": 4,
+      "p25": 52,
+      "median": 67,
+      "p75": 86,
+      "max": 394,
+      "mean": 72.62
+    },
+    "assistant_turn_chars": {
+      "min": 2,
+      "p25": 63,
+      "median": 96,
+      "p75": 173,
+      "max": 1797,
+      "mean": 151.28
+    },
+    "target_response_chars": {
+      "min": 3,
+      "p25": 63,
+      "median": 99,
+      "p75": 184,
+      "max": 1754,
+      "mean": 158.24
+    },
+    "emotion_label_dist": {
+      "anxiety": 751,
+      "relaxed": 409,
+      "mixed": 177,
+      "helplessness": 142,
+      "sadness": 131,
+      "fear": 124,
+      "gratitude": 118,
+      "shame": 118,
+      "loneliness": 115,
+      "anger": 115,
+      "neutral": 53,
+      "pride": 40,
+      "disgust": 21,
+      "joy": 20,
+      "care": 11,
+      "surprise": 9
+    },
+    "profile_array_sizes": {
+      "traits": {
+        "0": 1456,
+        "1": 657,
+        "2": 237,
+        "3": 4
+      },
+      "interests": {
+        "0": 1763,
+        "1": 543,
+        "3": 4,
+        "2": 44
+      },
+      "style": {
+        "0": 1218,
+        "1": 943,
+        "2": 189,
+        "3": 4
+      }
+    },
+    "traits_dist": {
+      "sensitive": 487,
+      "conservative": 253,
+      "high_conscientiousness": 205,
+      "assertive": 74,
+      "agreeable": 53,
+      "introverted": 52,
+      "emotionally_stable": 9,
+      "casual": 4,
+      "open": 4,
+      "extroverted": 2
+    },
+    "interests_dist": {
+      "career_development": 128,
+      "pets": 106,
+      "study_exam": 95,
+      "sports_fitness": 84,
+      "games": 81,
+      "reading_writing": 40,
+      "art_design": 32,
+      "social": 23,
+      "travel_outdoor": 21,
+      "music": 19,
+      "film_animation": 13,
+      "programming_technology": 1
+    },
+    "style_dist": {
+      "rational": 585,
+      "direct": 281,
+      "detailed": 147,
+      "brief": 120,
+      "indirect": 59,
+      "high_emotional_expression": 57,
+      "colloquial": 54,
+      "formal": 22,
+      "humorous": 8
+    },
+    "memory_refs_per_point": {
+      "0": 41,
+      "1": 568,
+      "2": 1117,
+      "3": 538,
+      "4": 82,
+      "5": 5,
+      "6": 1,
+      "7": 2
+    },
+    "distinct_mem_ids": 3301,
+    "mem_id_top": [
+      [
+        "mem_016249",
+        7
+      ],
+      [
+        "mem_014759",
+        5
+      ],
+      [
+        "mem_016252",
+        5
+      ],
+      [
+        "mem_015127",
+        5
+      ],
+      [
+        "mem_005673",
+        4
+      ],
+      [
+        "mem_006189",
+        4
+      ],
+      [
+        "mem_007163",
+        4
+      ],
+      [
+        "mem_007164",
+        4
+      ],
+      [
+        "mem_007193",
+        4
+      ],
+      [
+        "mem_007348",
+        4
+      ]
+    ],
+    "conversations_with_memory": 889,
+    "resp_turn_gap_dist": {
+      "1": 2354
+    },
+    "target_text_equals_turn_text": 2354,
+    "target_turn_missing": 0,
+    "not_adjacent": 0,
+    "first_prediction_target_turn_dist": {
+      "1": 103,
+      "3": 306,
+      "5": 263,
+      "7": 115,
+      "9": 56,
+      "11": 18,
+      "13": 13,
+      "15": 9,
+      "17": 13,
+      "19": 3,
+      "21": 1
+    },
+    "roles": {
+      "user": 5866,
+      "assistant": 5866,
+      "bad": 0
+    }
+  }
+}

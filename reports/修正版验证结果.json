@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-08",
+  "scope": "handoff_bug_fixes",
+  "regression_tests": {
+    "unique_tests_passed": 10,
+    "execution": "service/core and ML/core run in separate existing runtimes; every test executed"
+  },
+  "t2_full_calibration": {
+    "instances": 2354,
+    "calib": 1178,
+    "holdout": 1176,
+    "conversation_overlap": 0,
+    "prediction_metrics_recomputed": {
+      "A": {
+        "emotion_accuracy": 0.7278911564625851,
+        "emotion_macro_f1": 0.6369147321465712,
+        "profile_exact": 0.06802721088435375
+      },
+      "B": {
+        "emotion_accuracy": 0.7278911564625851,
+        "emotion_macro_f1": 0.6369147321465712,
+        "profile_exact": 0.3673469387755102
+      }
+    }
+  },
+  "t2_all_207_tensor_values_unchanged": true,
+  "t2_base": "models/chinese-roberta-wwm-ext",
+  "t3_adapter_sha256_unchanged": true,
+  "t3_adapter_load_and_8_token_generation": "passed (one sample)",
+  "python_ast_and_json_jsonl_parse": "passed",
+  "powershell_utf8_source_parse": "passed",
+  "missing_dependency_verifier_nonzero_exit": "passed",
+  "not_run": [
+    "model_retraining",
+    "GPU_execution",
+    "7B_weight_download",
+    "Docker_build",
+    "clean_machine_network_setup"
+  ]
+}

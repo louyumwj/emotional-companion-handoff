@@ -1,0 +1,59 @@
+{
+  "train": {
+    "instances": 18653,
+    "skipped_anomaly": 4,
+    "conversations_with_multiple_points": 6109,
+    "conversations_with_identical_profile_across_points": 3915,
+    "profile_consistency_rate": 0.6409
+  },
+  "val": {
+    "instances": 2354,
+    "skipped_anomaly": 0,
+    "conversations_with_multiple_points": 733,
+    "conversations_with_identical_profile_across_points": 475,
+    "profile_consistency_rate": 0.648
+  },
+  "train_emotion_dist": {
+    "anxiety": 6340,
+    "relaxed": 2816,
+    "helplessness": 1575,
+    "fear": 1388,
+    "sadness": 1085,
+    "mixed": 945,
+    "loneliness": 876,
+    "anger": 855,
+    "shame": 752,
+    "gratitude": 694,
+    "neutral": 654,
+    "pride": 234,
+    "joy": 171,
+    "disgust": 125,
+    "care": 79,
+    "surprise": 64
+  },
+  "train_emotion_majority": [
+    "anxiety",
+    6340
+  ],
+  "train_emotion_majority_acc": 0.3399,
+  "train_profile_empty_rate": {
+    "personality_traits": 0.5625,
+    "interests": 0.6925,
+    "style": 0.4681
+  },
+  "train_memory_empty_rate": 0.0234,
+  "train_history_turns_dist": {
+    "1": 589,
+    "3": 2430,
+    "5": 3371,
+    "7": 2676,
+    "9": 2343,
+    "11": 1688,
+    "13": 1107,
+    "15": 1347,
+    "17": 742,
+    "19": 564,
+    "21": 239,
+    "23": 323
+  }
+}

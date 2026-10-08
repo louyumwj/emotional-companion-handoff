@@ -1,0 +1,12 @@
+{
+  "n": 20,
+  "expected_n": 2354,
+  "coverage": 0.008496176720475786,
+  "emotion_acc": 0.1,
+  "emotion_macro_f1": 0.022727272727272728,
+  "profile_exact": 0.15,
+  "memory_f1": 0.0,
+  "memory_exact": 0.0,
+  "rouge_l": 0.15974950950069722,
+  "bleu4": 0.036460525704440985
+}

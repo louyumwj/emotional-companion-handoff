@@ -1,0 +1,31 @@
+{
+  "args": {
+    "base": "models/chinese-roberta-wwm-ext",
+    "epochs": 1.0,
+    "batch_size": 16,
+    "lr": 3e-05,
+    "max_length": 256,
+    "max_steps": 0,
+    "subset": 0,
+    "lambda_profile": 1.0,
+    "out": "models/t2_multitask",
+    "tag": "v1",
+    "threads": 16,
+    "freeze_layers": 6
+  },
+  "history": [
+    {
+      "emotion_acc": 0.7141036533559898,
+      "emotion_macro_f1": 0.6220562746498156,
+      "profile_exact": 0.0004248088360237893,
+      "profile_f1": {
+        "personality_traits": 0.003490401396160558,
+        "interests": 0.0,
+        "style": 0.0
+      },
+      "epoch": 1,
+      "step": 1166
+    }
+  ],
+  "elapsed_sec": 4776.4
+}

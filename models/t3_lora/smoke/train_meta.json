@@ -1,0 +1,25 @@
+{
+  "args": {
+    "model": "models/Qwen2.5-0.5B-Instruct",
+    "data": "data/processed/views/train_resp_sft.jsonl",
+    "subset": 200,
+    "epochs": 1,
+    "max_steps": 24,
+    "batch_size": 1,
+    "grad_accum": 8,
+    "max_len": 512,
+    "lr": 0.0001,
+    "lora_r": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0.05,
+    "out": "models/t3_lora",
+    "tag": "smoke",
+    "threads": 6
+  },
+  "trainable_params": 8798208,
+  "total_params": 502830976,
+  "steps": 24,
+  "elapsed_sec": 989.5,
+  "device": "cpu",
+  "base_model": "models/Qwen2.5-0.5B-Instruct"
+}
