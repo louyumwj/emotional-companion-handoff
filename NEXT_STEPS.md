@@ -7,7 +7,8 @@
 - 私有仓库：<https://github.com/louyumwj/emotional-companion-handoff>
 - 修正版 Release：<https://github.com/louyumwj/emotional-companion-handoff/releases/tag/handoff-20261008>
 - 代码和本文在仓库中；完整修正版 ZIP、本文、SHA256 校验文件在 Release 附件中。
-- ZIP：`情感陪伴镜像_交接包_修正版_20261008.zip`，438,017,049 字节。
+- GitHub ZIP 附件：`emotional-companion-fixed-20261008.zip`，438,017,049 字节。本地原始输出名为 `情感陪伴镜像_交接包_修正版_20261008.zip`，内容相同。
+- GitHub 交接文档附件：`NEXT_STEPS_20261008.md`，与仓库 `NEXT_STEPS.md` 内容一致。
 - ZIP SHA256：`101ac1e54c5675a4ca92cc8bfe317c833f166b769a280591089ce089b31f67ea`。
 
 Git 源码不存放原始 JSONL、逐条预测、样例对话和二进制模型权重；这些文件保留在私有 Release ZIP 中。`SOURCE_IMPORT.json` 列出源码导入记录及需要恢复的文件。`ARCHIVE_MANIFEST_SHA256.json` 对应 ZIP 原始内容，不用于校验后来新增或修改的仓库文档。
@@ -35,9 +36,9 @@ Git 源码不存放原始 JSONL、逐条预测、样例对话和二进制模型�
 需要有权访问该私有仓库的 GitHub 账号。下载后先验 SHA256，再解压到新的项目目录；进入 ZIP 内的 `情感陪伴镜像_完整` 目录。源码仓库可用于跟踪后续代码修改，完整 ZIP 可用于恢复训练数据和权重。
 
 ```powershell
-gh release download handoff-20261008 --repo louyumwj/emotional-companion-handoff --pattern '*修正版*.zip' --dir .\download
-Get-FileHash -LiteralPath '.\download\情感陪伴镜像_交接包_修正版_20261008.zip' -Algorithm SHA256
-Expand-Archive -LiteralPath '.\download\情感陪伴镜像_交接包_修正版_20261008.zip' -DestinationPath .\restored
+gh release download handoff-20261008 --repo louyumwj/emotional-companion-handoff --pattern 'emotional-companion-fixed-20261008.zip' --dir .\download
+Get-FileHash -LiteralPath '.\download\emotional-companion-fixed-20261008.zip' -Algorithm SHA256
+Expand-Archive -LiteralPath '.\download\emotional-companion-fixed-20261008.zip' -DestinationPath .\restored
 Set-Location '.\restored\情感陪伴镜像_完整'
 pwsh -File setup.ps1
 .venv-data\Scripts\python.exe tools\data\build_official_dataset.py

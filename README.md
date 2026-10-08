@@ -9,11 +9,11 @@
 [Release handoff-20261008](https://github.com/louyumwj/emotional-companion-handoff/releases/tag/handoff-20261008) 包含完整修正版 ZIP、最新交接文档与 SHA256 校验文件。需要有权访问本私有仓库的 GitHub 账号。
 
 ```powershell
-gh release download handoff-20261008 --repo louyumwj/emotional-companion-handoff --pattern '*修正版*.zip' --dir .\download
-Get-FileHash -LiteralPath '.\download\情感陪伴镜像_交接包_修正版_20261008.zip' -Algorithm SHA256
+gh release download handoff-20261008 --repo louyumwj/emotional-companion-handoff --pattern 'emotional-companion-fixed-20261008.zip' --dir .\download
+Get-FileHash -LiteralPath '.\download\emotional-companion-fixed-20261008.zip' -Algorithm SHA256
 ```
 
-预期 SHA256：`101ac1e54c5675a4ca92cc8bfe317c833f166b769a280591089ce089b31f67ea`。
+GitHub 使用英文附件名 `emotional-companion-fixed-20261008.zip`；本地中文名称的 ZIP 与它内容相同。预期 SHA256：`101ac1e54c5675a4ca92cc8bfe317c833f166b769a280591089ce089b31f67ea`。
 
 Git 跟踪代码、schema、配置和报告；完整数据、逐条预测与二进制模型权重放在 Release。恢复文件清单见 [SOURCE_IMPORT.json](SOURCE_IMPORT.json)。ZIP 内不含基座模型、虚拟环境和可再生训练视图，恢复步骤见交接文档。
 
